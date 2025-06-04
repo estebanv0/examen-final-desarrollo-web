@@ -1,1 +1,1 @@
-se creo una api fake utilizando platzi
+se le agregaron funciones nuevas al parcial anterior utilizando platzi
