@@ -38,11 +38,11 @@ fetch('https://api.escuelajs.co/api/v1/categories', {
 });
 
 function showCartDetail(id) {
-  fetch(https://dummyjson.com/carts/${id})
+  fetch("https://dummyjson.com/carts/${id}")
     .then(res => res.json())
     .then(cart => {
       let items = cart.products.map(p => <li>${p.title} x${p.quantity} - $${p.price}</li>).join("");
-      document.getElementById("modal-title").textContent = Carrito #${cart.id};
+      document.getElementById("modal-title").textContent = "Carrito #${cart.id}";
       document.getElementById("modal-body").innerHTML = `
         <ul>${items}</ul>
         <p><strong>Total:</strong> $${cart.total}</p>
