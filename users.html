@@ -8,6 +8,43 @@
   <script src="https://kit.fontawesome.com/a2e0c1f5d9.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">🛒 Mi Tienda</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegación">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="products.html">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="users.html">Usuarios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="carts.html">Categorías</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="register.html">Registrar Usuario</a>
+        </li>
+      </ul>
+      <button class="btn btn-outline-light" onclick="logout()">Cerrar sesión</button>
+    </div>
+  </div>
+</nav>
+
+<script>
+  function logout() {
+    localStorage.removeItem('auth_token');
+    alert("Sesión cerrada");
+    window.location.href = "login.html";
+  }
+</script>
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Shopping Cart</a>
